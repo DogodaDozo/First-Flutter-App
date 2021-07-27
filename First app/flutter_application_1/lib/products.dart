@@ -9,12 +9,13 @@ class Products extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
         children: _products
-            .map((elt) => Card(
-                  child: Column(children: <Widget>[
-                    Image.asset('assets/food.jpg'),
-                    Text(elt)
-                  ]),
-                ))
+            .map(
+              (elt) => Card(
+                child: Column(
+                  children: <Widget>[Image.asset('assets/food.jpg'), Text(elt)],
+                ),
+              ),
+            )
             .toList());
   }
 }
